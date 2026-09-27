@@ -1,0 +1,8 @@
+# out-of-tree build directories
+glibc/build/
+# kernel build outputs are covered by kernel/.gitignore; the config we ship
+# is kernel/firework.config (kernel/.config is generated from it)
+kernel/.config
+kernel/.config.old
+# editor state
+.vscode/

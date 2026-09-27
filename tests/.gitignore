@@ -1,0 +1,41 @@
+# Build outputs
+runtime/build/
+**/*.o
+**/*.a
+**/*.so
+**/*.so.*
+
+# Compiled benchmark binaries (named after their directory)
+dataframe/dataframe
+collab_filter/collab_filter
+pagerank/pagerank
+feed_gen/feed_gen
+sci_kernel/sci_kernel
+sci_kernel/sci_kernel-single
+locktest/locktest
+unshare/unshare
+batching/batching
+
+# Generated datasets (regenerate with each app's create.* script)
+**/data
+**/data/
+**/*.bin
+dataframe/input_*
+dataframe/zipf_*
+feed_gen/zipf_*.txt
+*.txt.gz
+
+# Experiment outputs
+results/
+*.pdf
+*.png
+
+# Editor / OS cruft
+.vscode/
+*~
+\#*\#
+.DS_Store
+
+# Python bytecode
+__pycache__/
+*.pyc
